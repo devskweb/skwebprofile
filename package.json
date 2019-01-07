@@ -1,0 +1,15 @@
+{
+  "name": "skportfolio",
+  "version": "1.0.0",
+  "description": "hii",
+  "main": "index.js",
+  "scripts": {
+    "sass": " node-sass -w scss/ -o file/css --recursive "
+  },
+  "author": "skweb",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {}
+}
