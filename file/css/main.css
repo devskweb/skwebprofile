@@ -15,7 +15,7 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 6rem; }
+    font-size: 5rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -34,3 +34,13 @@ header {
 
 .text-secondary {
   color: #d5e44f; }
+
+main {
+  padding: 4rem;
+  height: 100%; }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons icon a {
+      padding: 0.4rem; }
+      main .icons icon a.hover {
+        color: #d5e44f; }
