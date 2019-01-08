@@ -1,5 +1,6 @@
-$primary-color: rgb(241, 91, 91);
-$secondary-color: rgb(213, 228, 79);
+$primary-color: rgb(129, 131, 151);
+$secondcolor: rgb(82, 162, 236);
+
 * {
   box-sizing: border-box;
 }
@@ -21,7 +22,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primarycolor, 2), 0.5);
+    background: rgba(lighten($primary-color, 2), 0.5);
   }
 }
 a {
@@ -34,7 +35,7 @@ header {
   width: 100%;
 }
 .text-secondary {
-  color: $secondary-color;
+  color: $secondcolor;
 }
 main {
   padding: 4rem;
@@ -42,12 +43,13 @@ main {
 
   .icons {
     margin-top: 1rem;
-    icon a {
+
+    a {
       padding: 0.4rem;
 
-      &.hover {
-        color: $secondary-color;
-        transition: all;
+      &:hover {
+        color: $primary-color;
+        transition: color 1.5s ease-out;
       }
     }
   }

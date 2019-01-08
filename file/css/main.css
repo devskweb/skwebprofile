@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #444;
+  background-color: #818397;
   height: 100%;
   margin: 0;
   line-height: 1.5; }
@@ -21,7 +21,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(135, 136, 156, 0.5); }
 
 a {
   color: #fff;
@@ -33,14 +33,15 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #d5e44f; }
+  color: #52a2ec; }
 
 main {
   padding: 4rem;
   height: 100%; }
   main .icons {
     margin-top: 1rem; }
-    main .icons icon a {
+    main .icons a {
       padding: 0.4rem; }
-      main .icons icon a.hover {
-        color: #d5e44f; }
+      main .icons a.hover {
+        color: #818397;
+        transition: color 1.5s ease-out; }
