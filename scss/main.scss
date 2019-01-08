@@ -48,8 +48,10 @@ main {
       padding: 0.4rem;
 
       &:hover {
-        color: $primary-color;
-        transition: color 1.5s ease-out;
+        color: yellow;
+      }
+      &.fab:hover {
+        transform: scale(1.3);
       }
     }
   }

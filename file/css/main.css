@@ -42,6 +42,7 @@ main {
     margin-top: 1rem; }
     main .icons a {
       padding: 0.4rem; }
-      main .icons a.hover {
-        color: #818397;
-        transition: color 1.5s ease-out; }
+      main .icons a:hover {
+        color: yellow; }
+      main .icons a.fab:hover {
+        transform: scale(1.3); }
