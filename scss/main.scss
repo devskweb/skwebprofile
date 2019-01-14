@@ -1,9 +1,10 @@
 @import "config";
+@import "menu";
 * {
   box-sizing: border-box;
 }
 body {
-  background-image: url("D:\santosh\desktop\skportfolio\file\images\back.jpg");
+  // background-image: url("D:\santosh\desktop\skportfolio\file\images\back.jpg");
   @include background;
   background-color: $primary-color;
   height: 100%;
