@@ -35,6 +35,15 @@
   .portrait {
     @include background;
   }
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "skills"
+      "education"
+      "intraskills";
+    grid-template-columns: 1fr;
+  }
 }
 @include mediaSm {
   main#home h1 {
