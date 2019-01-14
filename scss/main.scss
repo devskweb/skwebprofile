@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "mobile";
 * {
   box-sizing: border-box;
 }
@@ -16,6 +17,7 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400;
+  color: #fff;
 
   &.lg-heading {
     font-size: 5rem;

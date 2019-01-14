@@ -52,6 +52,7 @@
   }
 
   &-nav {
+    color: #ffffff;
     margin: 0;
     padding: 0;
     background: lighten($primary-color, 5);
@@ -78,7 +79,7 @@
       height: 250px;
       background: white;
       border-radius: 50%;
-      border: solid 3px black;
+      border: solid 3px $tertiarycolor;
     }
   }
   .nav-item {
@@ -98,12 +99,13 @@
     font-size: 30px;
     text-transform: uppercase;
     padding: 1rem 0;
-    font-weight: 300;
-    color: black;
+    font-weight: 500;
+    color: white;
     text-decoration: none;
     @include easeOut;
 
     &:hover {
+      transform: scale(1.5);
       color: $tertiarycolor;
     }
   }
