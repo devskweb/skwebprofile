@@ -55,7 +55,7 @@
     color: #ffffff;
     margin: 0;
     padding: 0;
-    background: lighten($primary-color, 5);
+    background: darken($primary-color, 5);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -67,7 +67,7 @@
 
   &-branding {
     z-index: 10;
-    background: $primary-color;
+    background: lighten($primary-color, 5);
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
@@ -90,7 +90,7 @@
       transform: translate3d(0, 0, 0);
     }
     &.current > a {
-      color: $secondcolor;
+      color: $tertiarycolor;
     }
   }
   .nav-link {
@@ -105,7 +105,7 @@
     @include easeOut;
 
     &:hover {
-      transform: scale(1.5);
+      transform: scale(1.2);
       color: $tertiarycolor;
     }
   }

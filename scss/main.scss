@@ -81,7 +81,7 @@ main {
   }
   .bio {
     grid-area: bio;
-    h3 {
+    h2 {
       border-bottom: $tertiarycolor 5px solid;
     }
   }
@@ -105,6 +105,7 @@ main {
     }
     &:hover {
       transform: scale(1.1);
+      @include easeOut;
     }
   }
 }
@@ -118,17 +119,44 @@ main {
   }
 }
 .item {
+  transition: box-shadow 0.5s;
   &:hover {
     opacity: 0.8;
     border-color: $tertiarycolor;
-    transform: scale(1.2);
+    box-shadow: 0 0 11px #5a08f3f1;
     @include easeOut;
+  }
+}
+.boxes {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  padding-right: 6rem;
+  div {
+    font-size: 1.75rem;
+    border: 3px $tertiarycolor solid;
+    padding: 1.5rem;
+    width: 100%;
+
+    margin-bottom: 3rem;
+    @include easeOut;
+    &:hover {
+      border-radius: 50%;
+      background: $tertiarycolor;
+      color: white;
+      transform: scale(1.1);
+      @include easeOut;
+      span {
+        color: black;
+      }
+    }
   }
 }
 .btn {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
+
   margin-bottom: 0.3rem;
   &:hover {
     background: $tertiarycolor;
