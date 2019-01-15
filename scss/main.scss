@@ -42,8 +42,7 @@ header {
 }
 main {
   padding: 4rem;
-
-  min-height: calc(100vh-60px);
+  min-height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -108,6 +107,43 @@ main {
       transform: scale(1.1);
     }
   }
+}
+.projects {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  img {
+    width: 100%;
+    border: 3px $primary-color solid;
+  }
+}
+.item {
+  &:hover {
+    opacity: 0.8;
+    border-color: $tertiarycolor;
+    transform: scale(1.2);
+    @include easeOut;
+  }
+}
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: $tertiarycolor;
+    color: white;
+  }
+}
+.btn-dark {
+  @extend .btn;
+  background: black;
+  color: silver;
+}
+.btn-light {
+  @extend .btn;
+  background: silver;
+  color: black;
 }
 #main-footer {
   text-align: center;
