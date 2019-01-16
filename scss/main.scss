@@ -66,7 +66,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "education skills intraskills";
+  grid-template-areas: "bio bio bioimage" "education skills intraskills";
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -130,7 +130,7 @@ main {
 .boxes {
   display: grid;
   grid-gap: 25px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 2fr);
   padding-right: 6rem;
   div {
     font-size: 1.75rem;
