@@ -130,8 +130,9 @@ main {
 .boxes {
   display: grid;
   grid-gap: 25px;
+  align-content: center;
   grid-template-columns: repeat(2, 2fr);
-  padding-right: 6rem;
+
   div {
     font-size: 1.75rem;
     border: 3px $tertiarycolor solid;

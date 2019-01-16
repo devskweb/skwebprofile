@@ -211,8 +211,8 @@ main {
 .boxes {
   display: grid;
   grid-gap: 25px;
-  grid-template-columns: repeat(2, 2fr);
-  padding-right: 6rem; }
+  align-content: center;
+  grid-template-columns: repeat(2, 2fr); }
   .boxes div {
     font-size: 1.75rem;
     border: 3px #4de4c3 solid;
