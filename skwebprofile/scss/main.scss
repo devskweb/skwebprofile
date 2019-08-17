@@ -1,0 +1,184 @@
+@import "config";
+@import "menu";
+
+* {
+  box-sizing: border-box;
+}
+body {
+  // background-image: url("D:\santosh\desktop\skportfolio\file\images\back.jpg");
+  @include background;
+  background-color: $primary-color;
+  height: 100%;
+  margin: 0;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+  color: #fff;
+
+  &.lg-heading {
+    font-size: 5rem;
+  }
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+}
+a {
+  color: #fff;
+  text-decoration: None;
+}
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+.text-secondary {
+  color: $secondcolor;
+}
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px);
+
+  .icons {
+    margin-top: 1rem;
+
+    a {
+      padding: 0.4rem;
+
+      &:hover {
+        color: yellow;
+        @include easeOut;
+      }
+    }
+  }
+  &.home {
+    overflow: hidden;
+    h1 {
+      margin-top: 18vh;
+    }
+  }
+}
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bio bio bioimage" "education skills intraskills";
+  grid-template-columns: repeat(3, 1fr);
+
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: $secondcolor 5px solid;
+    &:hover {
+      transform: scale(1.1);
+      @include easeOut;
+    }
+  }
+  .bio {
+    grid-area: bio;
+    h2 {
+      border-bottom: $tertiarycolor 5px solid;
+    }
+  }
+
+  .skills {
+    grid-area: skills;
+  }
+  .education {
+    grid-area: education;
+  }
+  .intraskills {
+    grid-area: intraskills;
+  }
+  .info {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-top: $tertiarycolor 5px solid;
+    border-bottom: $tertiarycolor 5px solid;
+    h2 {
+      color: $tertiarycolor;
+    }
+    &:hover {
+      transform: scale(1.1);
+      @include easeOut;
+    }
+  }
+}
+.projects {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  img {
+    width: 100%;
+    border: 3px $primary-color solid;
+  }
+}
+.item {
+  transition: box-shadow 0.5s;
+  &:hover {
+    opacity: 0.8;
+    border-color: $tertiarycolor;
+    box-shadow: 0 0 11px #5a08f3f1;
+    @include easeOut;
+  }
+}
+.boxes {
+  display: grid;
+  grid-gap: 25px;
+  align-content: center;
+  grid-template-columns: repeat(2, 2fr);
+
+  div {
+    font-size: 1.75rem;
+    border: 3px $tertiarycolor solid;
+    padding: 1.5rem;
+    width: 100%;
+
+    margin-bottom: 3rem;
+    @include easeOut;
+    &:hover {
+      border-radius: 50%;
+      background: $tertiarycolor;
+      color: white;
+      transform: scale(1.1);
+      @include easeOut;
+      span {
+        color: black;
+      }
+    }
+  }
+}
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: $tertiarycolor;
+    color: white;
+  }
+}
+.btn-dark {
+  @extend .btn;
+  background: black;
+  color: silver;
+}
+.btn-light {
+  @extend .btn;
+  background: silver;
+  color: black;
+}
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 5);
+  color: white;
+  height: 60px;
+}
+@import "mobile";
