@@ -1,0 +1,18 @@
+{
+  "name": "skportfolio",
+  "version": "1.0.0",
+  "description": "hii",
+  "main": "index.js",
+  "homepage": "https://santoshkumar1561997.github.io/skcodewebprofile",
+  "scripts": {
+    "sass": " node-sass -w scss/ -o file/css --recursive ",
+    "deploy": "gh-pages -d file"
+  },
+  "author": "skweb",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {}
+}
