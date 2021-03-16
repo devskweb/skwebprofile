@@ -41,7 +41,7 @@
     color: #ffffff;
     margin: 0;
     padding: 0;
-    background: #787474;
+    background: #373d5a;
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
@@ -49,7 +49,7 @@
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     z-index: 10;
-    background: #928e8e;
+    background: #8e9192;
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -58,14 +58,14 @@
       width: 300px;
       height: 170px;
       border-radius: 50%;
-      border: solid 3px #4de4c3; }
+      border: solid 3px #373d5a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #4de4c3; }
+      color: #10E7DC; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -78,7 +78,7 @@
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
       transform: scale(1.2);
-      color: #4de4c3; }
+      color: #10E7DC; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.15s; }
@@ -96,7 +96,7 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #858181;
+  background-color: #459995;
   height: 100%;
   margin: 0;
   line-height: 1.5; }
@@ -113,7 +113,8 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(133, 129, 129, 0.7); }
-
+h4{color: white;
+text-decoration: none;}
 h1,
 h2,
 h3 {
@@ -141,7 +142,9 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #3dccf0; }
+  color: whitesmoke; }
+  .text-primary {
+    color: black; }
 
 main {
   padding: 4rem;
@@ -149,9 +152,11 @@ main {
   main .icons {
     margin-top: 1rem; }
     main .icons a {
-      padding: 0.4rem; }
+      padding: 0.4rem; 
+      color: black;
+    }
       main .icons a:hover {
-        color: yellow;
+        color: #10E7DC;
         transition: all 0.5s ease-out; }
   main.home {
     overflow: hidden; }
@@ -161,33 +166,36 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bio bio bioimage" "education skills intraskills";
+  grid-template-areas: "bio bio bioimage" "education skills XYZ";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #3dccf0 5px solid; }
+    border: #373d5a 5px solid; }
     .about-info .bio-image:hover {
       transform: scale(1.1);
       transition: all 0.5s ease-out; }
   .about-info .bio {
     grid-area: bio; }
     .about-info .bio h2 {
-      border-bottom: #4de4c3 5px solid; }
+      border-bottom: #373d5a 5px solid; }
   .about-info .skills {
     grid-area: skills; }
   .about-info .education {
     grid-area: education; }
-  .about-info .intraskills {
-    grid-area: intraskills; }
   .about-info .info {
-    background: #928e8e;
+    background: #4f5469;
     padding: 0.5rem;
-    border-top: #4de4c3 5px solid;
-    border-bottom: #4de4c3 5px solid; }
+    border-top: #373d5a 5px solid;
+    border-bottom: #373d5a 5px solid; }
     .about-info .info h2 {
-      color: #4de4c3; }
+      font-size: x-large;
+      font-weight:bold;
+      color: black; }
+      .about-info .info h5 {
+        font-size: medium;
+        color: white; }  
     .about-info .info:hover {
       transform: scale(1.1);
       transition: all 0.5s ease-out; }
@@ -204,25 +212,29 @@ main {
   transition: box-shadow 0.5s; }
   .item:hover {
     opacity: 0.8;
-    border-color: #4de4c3;
+    border-color: #f79e02;
     box-shadow: 0 0 11px #5a08f3f1;
     transition: all 0.5s ease-out; }
 
 .boxes {
-  display: grid;
-  grid-gap: 25px;
-  align-content: center;
-  grid-template-columns: repeat(2, 2fr); }
+  width: fit-content;
+  padding-left: 200px;
+  grid-template-columns: 1fr;
+}
   .boxes div {
     font-size: 1.75rem;
-    border: 3px #4de4c3 solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-left: 200px;
+    border: 3px #f79e02 solid;
     padding: 1.5rem;
     width: 100%;
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      border-radius: 50%;
-      background: #4de4c3;
+      border-radius: 10%;
+      background: #f79e02;
       color: white;
       transform: scale(1.1);
       transition: all 0.5s ease-out; }
@@ -235,15 +247,15 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #4de4c3;
+    background: #10E7DC;
     color: white; }
 
 .btn-dark {
-  background: black;
-  color: silver; }
+  background: silver;
+  color: rgb(85, 13, 13); }
 
 .btn-light {
-  background: silver;
+  background: #f79e02;
   color: black; }
 
 #main-footer {
@@ -260,7 +272,7 @@ main {
     width: 250px;
     height: 350px;
     border-radius: 50%;
-    border: solid 3px #4de4c3; }
+    border: solid 3px #373d5a; }
   .boxes {
     grid-template-columns: repeat(3, 1fr); } }
 
@@ -295,13 +307,17 @@ main {
     width: 200px;
     height: 170px;
     border-radius: 50%;
-    border: solid 3px #4de4c3; }
+    border: solid 3px #373d5a; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "skills" "education" "intraskills";
+    grid-template-areas: "bioimage"
+ "bio"
+ "skills"
+ "education";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .boxes {
+    padding-left: 20px;
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
@@ -313,6 +329,7 @@ main {
     width: 250px;
     height: 170px;
     border-radius: 50%;
-    border: solid 3px #4de4c3; }
+    border: solid 3px #f79e02; }
   .boxes {
+    padding-left: 20px;
     grid-template-columns: 1fr; } }
